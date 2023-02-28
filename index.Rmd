@@ -59,9 +59,8 @@ Include a chart. Make sure to describe why you included the chart, and what patt
 Summary: 
 For this chart I decided to look for trends pertaining to physical Vs digital as I was curious to see how library's have been impacted by the rise of the internet and digital age.I chose to use a line chart as it would be easier to compare them to each other. In this case I was able to come to an understanding that digital media and physical media have been inversely related as physical checkouts have fallen while digital checkouts have become more common place. One outlier which we saw from the graph was 2020 as it seems to be the final nail in the coffin for physical books as during the pandemic many people were unable to checkout physically and we saw more digital books being checked out.
 
-``````{r, echo = FALSE}
-readLines("Chart1TylerRamos.R")
-graph1
+```{r, echo = FALSE, code = readLines("Chart1TylerRamos.R"), warning = FALSE}
+
 ```
 
 ### Second Trends Over Time Chart
@@ -71,9 +70,8 @@ Include a chart. Make sure to describe why you included the chart, and what patt
 Summary: 
 For this chart I decided to look for trends pertaining to popular book series which I had read when I was a child and I was curious to see how their popularity has changed over time and how they popularity was impacted by external factors.I chose to use a line chart as I am using multiple qualitative data points and only one quantitative data points and thus it would be easier to compare them to each other with a line chart. One pattern which I found that was very interesting was the different types of spikes in popularity we saw for both Harry Potter and Percy Jackson. One example of this was in 2016 we saw the release of the first Harry Potter movie since the end of the main series which caused a surge in checkouts of Harry Potter books again. From this I was able to understand a pattern that movies, Broadway shows and other forms of advertising caused major impacts in how popular certain books were. 
 
-``````{r, echo = FALSE}
-readLines("Chart2TylerRamos.R")
-graph2
+```{r, echo = FALSE, code = readLines("Chart2TylerRamos.R"), warning = FALSE}
+
 ```
 
 ### Your Choice
@@ -84,7 +82,6 @@ Summary:
 For this chart I decided to look for trends pertaining to if certain months of the year were more popular for checking out books which in this case I just calculated the sum for each month to determine popularity.I chose to use a bar chart as the data I am using had both a quantitative variable and qualitative variable and I felt a bar chart best represented the months(note in this case I chose not to include a legend as I felt it would have negatively impacted the visualization of my data). When looking into the data it painted a really interesting picture as January, March, July and August were most popular. When doing some reasoning January made sense as it was typically when people make new years resolutions and thus more people would checkout books. For March I was a bit confused, but after some research I was able to determine that March was national reading month and thus there would naturally be more readers. As for July and August I believe we saw a trend that more people were checking out books due to school being closed during the summer and thus people had more free time to read. From this I was able to determine a trend in how people utilized the Seattle Public Library. 
 
 
-``````{r, echo = FALSE}
-readLines("Chart3TylerRamos.R")
-graph3
+```{r, echo = FALSE, code = readLines("Chart3TylerRamos.R"), warning = FALSE}
+
 ```
