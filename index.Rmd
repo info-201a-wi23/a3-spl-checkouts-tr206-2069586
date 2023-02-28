@@ -7,80 +7,84 @@ output: html_document
 
 An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
 
+The data in this case was take by the SPL(Seattle public Library) and tracks how often certain media was checked out.
+
+-One piece of data which I am using is the UsageCase which shows if the checkout was physical or digital, I'm doing this because I wanna understand and see if we are having a trend towards a more digital library experiences and how fast this adoption is. 
+
+-The second piece of data I am using is the total checkouts for the series Harry Potter(HP), Lord of the rings(LOR) and Percy Jackson(PJ). I chose this because I was curious to see what the popularity trend looked like for some of my favorite childhood books.
+
+-The Third piece of data I am using is the total checkouts and months. I chose this data because I was curious to see if there were certain months when people checked out more media then other months.
+
 ### Summary Information
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
 These will likely be calculated using your DPLYR skills, answering questions such as:
 
-- What is the average number of checkouts for each item?
-- What is the month or year with the most/least checkouts for a book that you're interested in?
-- What is the month or year with the most/least checkouts for ebooks?
-- How has the number of print book checkouts changed over time?
-
-Feel free to calculate and report values that you find relevant.
+Some findings I found from this assignment was how Digital media and Physical media compare. One value I had to calculate was which year had the most physical checkouts which in this case was 2013 which makes sense as it was the oldest data point we had. Due to digital media becoming more popular I also had to calculate the year in which digital become more popular then physical which was actually half-way through 2019 and was further pushed ahead of physical due to the 2020 Covid pandemic. I also found that certain months of the year were more popular for checkouts which in this case January was actually the month with the most amount of checkouts. While figuring out which month had the most checkouts I was also able to calculate which month had the least checkouts which in this case was April.Finally the last piece of data I was able to calculate was that Harry Potter was most popular during 2020 as it had a resurgence of popularity(note this is only from 2013-2023). From this assignment I was able to understand that digital media is much more popular then physical books and that many people don't stick to their New Years Resolutions. 
 
 ### The Dataset
 
 - Who collected/published the data?  
+  The Seattle public library is the organization which collected and published the data.
+  
 - What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
+In my case I used the parameter that the data/media must have been at least checked out 5 times that
+month in order for it to be recorded.
+
 - How was the data collected or generated?  
+The data was collected via checkout history through the daily operation of the Seattle Public library.
+
 - Why was the data collected?  
+I would assume this data was collected to see which books are most popular and in order to find out when books should be retired and replaced with newer and more popular books.
+
+How many observations (rows) are in your data?
+There are 4224916 observations in my data. 
+
+How many features (columns) are in the data?
+There are 12 features in my data.
+
 - What, if any, ethical questions do you need to consider when working with this data?  
+I think one ethical question we should be asking is should books be retired based on this data alone as something people checkout books and never actually read them so it might be a poor indicator of if a book should be retired.
+
 - What are possible limitations or problems with this data?   (at least 200 words)
+
+I think one limitation is since the data is base purely on numbers it might seem certain groups of data are increasing while other stagnate, but we don't take into consideration outside factors such as population change, changes in library card costs and other outside influences. I think another possible limitation of this data is that it only tracked checkouts for media and if a media has a high amount of checkouts it typically seen as more desirable and included in the data, but it does not take into consideration of how long said book is as a 5,000 page book is going to have less checkouts per month when compared to a 100 page book and certain book's checkout numbers might be inflated when compared to others. I think another limitation of this data is we don't know how many copies of each book we have so certain title's may have a lower amounts of checkouts purely due to the fact that Seattle Public Library owns less copies. Similar if Seattle Public library has more copies of a book it would artificially have more checkouts. In this case the best way to solve this issue would be to have a list of all books in the library an create a weighted avg monthly checkouts per book rather than just tracking the total amount of checkouts. I think the final limitation I can see from this data is the fact that we don't track the turnover time of books in this case we could have many data points which are form books which were only checked out for not more than 1 hr. 
 
 
 ### First Trends Over Time Chart
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
-The first chart that you will create and include will show the trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+Summary: 
+For this chart I decided to look for trends pertaining to physical Vs digital as I was curious to see how library's have been impacted by the rise of the internet and digital age.I chose to use a line chart as it would be easier to compare them to each other. In this case I was able to come to an understanding that digital media and physical media have been inversely related as physical checkouts have fallen while digital checkouts have become more common place. One outlier which we saw from the graph was 2020 as it seems to be the final nail in the coffin for physical books as during the pandemic many people were unable to checkout physically and we saw more digital books being checked out.
 
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE}
+readLines("Chart1TylerRamos.R")
+graph1
 ```
 
 ### Second Trends Over Time Chart
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
-The second chart that you will create and include will show another trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+Summary: 
+For this chart I decided to look for trends pertaining to popular book series which I had read when I was a child and I was curious to see how their popularity has changed over time and how they popularity was impacted by external factors.I chose to use a line chart as I'm using multiple qualitative data points and only one quantitative data points and thus it would be easier to compare them to each other with a line chart. One pattern which I found that was very interesting was the different types of spikes in popularity we saw for both Harry Potter and Percy Jackson. One example of this was in 2016 we saw the release of the first Harry Potter movie since the end of the main series which caused a surge in checkouts of Harry Potter books again. From this I was able to understand a pattern that movies, Broadway shows and other forms of advertising caused major impacts in how popular certain books were. 
 
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+``````{r, echo = FALSE)}
+readLines("Chart2TylerRamos.R")
+graph2
 ```
 
 ### Your Choice
 
 The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
 
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
+Summary: 
+For this chart I decided to look for trends pertaining to if certain months of the year were more popular for checking out books which in this case I just calculated the sum for each month to determine popularity.I chose to use a bar chart as the data I'm using had both a quantitative variable and qualitative variable and I felt a bar chart best represented the months(note in this case I chose not to include a legend as I felt it would have negatively impacted the visualization of my data). When looking into the data it painted a really interesting picture as January, March, July and August were most popular. When doing some reasoning January made sense as it was typically when people make new years resolutions and thus more people would checkout books. For March I was a bit confused, but after some research I was able to determine that March was national reading month and thus there would naturally be more readers. As for July and August I believe we saw a trend that more people were checking out books due to school being closed during the summer and thus people had more free time to read. From this I was able to determine a trend in how people utilized the Seattle Public Library. 
 
-Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+``````{r, echo = FALSE)}
+readLines("Chart3TylerRamos.R")
+graph3
 ```
-
-
