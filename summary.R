@@ -51,5 +51,3 @@ HP_Most_Popular_Year <- SPL_df %>%
   summarize(tot = sum(Checkouts)) %>%
   filter(tot == max(tot)) %>%
   pull(CheckoutYear) 
-  
-  

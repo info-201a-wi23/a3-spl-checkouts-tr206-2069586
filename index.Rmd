@@ -62,7 +62,6 @@ For this chart I decided to look for trends pertaining to physical Vs digital as
 ```{r, code = readLines("Chart1TylerRamos.R"), warning = FALSE, echo = FALSE, message = FALSE}
 ```
 
-
 ### Second Trends Over Time Chart
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
@@ -79,7 +78,6 @@ The last chart is up to you. It could be a line plot, scatter plot, histogram, b
 
 Summary: 
 For this chart I decided to look for trends pertaining to if certain months of the year were more popular for checking out books which in this case I just calculated the sum for each month to determine popularity.I chose to use a bar chart as the data I am using had both a quantitative variable and qualitative variable and I felt a bar chart best represented the months(note in this case I chose not to include a legend as I felt it would have negatively impacted the visualization of my data). When looking into the data it painted a really interesting picture as January, March, July and August were most popular. When doing some reasoning January made sense as it was typically when people make new years resolutions and thus more people would checkout books. For March I was a bit confused, but after some research I was able to determine that March was national reading month and thus there would naturally be more readers. As for July and August I believe we saw a trend that more people were checking out books due to school being closed during the summer and thus people had more free time to read. From this I was able to determine a trend in how people utilized the Seattle Public Library. 
-
 
 ```{r, code = readLines("Chart3TylerRamos.R"), warning = FALSE, echo = FALSE, message = FALSE}
 
