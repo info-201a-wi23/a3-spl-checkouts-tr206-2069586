@@ -21,7 +21,7 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 
 These will likely be calculated using your DPLYR skills, answering questions such as:
 
-Some findings I found from this assignment was how Digital media and Physical media compare. One value I had to calculate was which year had the most physical checkouts which in this case was 2013 which makes sense as it was the oldest data point we had. Due to digital media becoming more popular I also had to calculate the year in which digital become more popular then physical which was actually half-way through 2019 and was further pushed ahead of physical due to the 2020 Covid pandemic. I also found that certain months of the year were more popular for checkouts which in this case January was actually the month with the most amount of checkouts. While figuring out which month had the most checkouts I was also able to calculate which month had the least checkouts which in this case was April.Finally the last piece of data I was able to calculate was that Harry Potter was most popular during 2020 as it had a resurgence of popularity(note this is only from 2013-2023). From this assignment I was able to understand that digital media is much more popular then physical books and that many people don't stick to their New Years Resolutions. 
+Some findings I found from this assignment was how Digital media and Physical media compare. One value I had to calculate was which year had the most physical checkouts which in this case was 2013 which makes sense as it was the oldest data point we had. Due to digital media becoming more popular I also had to calculate the year in which digital become more popular then physical which was 2020 during the Covid pandemic. I also found that certain months of the year were more popular for checkouts which in this case January was actually the month with the most amount of checkouts. While figuring out which month had the most checkouts I was also able to calculate which month had the least checkouts which in this case was April.Finally the last piece of data I was able to calculate was that Harry Potter was most popular during 2020 as it had a resurgence of popularity(note this is only from 2013 to 2023). From this assignment I was able to understand that digital media is much more popular then physical books and that many people don't stick to their New Years Resolutions. 
 
 ### The Dataset
 
@@ -59,9 +59,9 @@ Include a chart. Make sure to describe why you included the chart, and what patt
 Summary: 
 For this chart I decided to look for trends pertaining to physical Vs digital as I was curious to see how library's have been impacted by the rise of the internet and digital age.I chose to use a line chart as it would be easier to compare them to each other. In this case I was able to come to an understanding that digital media and physical media have been inversely related as physical checkouts have fallen while digital checkouts have become more common place. One outlier which we saw from the graph was 2020 as it seems to be the final nail in the coffin for physical books as during the pandemic many people were unable to checkout physically and we saw more digital books being checked out.
 
-```{r, echo = FALSE, code = readLines("Chart1TylerRamos.R"), warning = FALSE}
-
+```{r, code = readLines("Chart1TylerRamos.R"), warning = FALSE, echo = FALSE, message = FALSE}
 ```
+
 
 ### Second Trends Over Time Chart
 
@@ -70,8 +70,7 @@ Include a chart. Make sure to describe why you included the chart, and what patt
 Summary: 
 For this chart I decided to look for trends pertaining to popular book series which I had read when I was a child and I was curious to see how their popularity has changed over time and how they popularity was impacted by external factors.I chose to use a line chart as I am using multiple qualitative data points and only one quantitative data points and thus it would be easier to compare them to each other with a line chart. One pattern which I found that was very interesting was the different types of spikes in popularity we saw for both Harry Potter and Percy Jackson. One example of this was in 2016 we saw the release of the first Harry Potter movie since the end of the main series which caused a surge in checkouts of Harry Potter books again. From this I was able to understand a pattern that movies, Broadway shows and other forms of advertising caused major impacts in how popular certain books were. 
 
-```{r, echo = FALSE, code = readLines("Chart2TylerRamos.R"), warning = FALSE}
-
+```{r, code = readLines("Chart2TylerRamos.R"), warning = FALSE, echo = FALSE, message = FALSE}
 ```
 
 ### Your Choice
@@ -82,6 +81,6 @@ Summary:
 For this chart I decided to look for trends pertaining to if certain months of the year were more popular for checking out books which in this case I just calculated the sum for each month to determine popularity.I chose to use a bar chart as the data I am using had both a quantitative variable and qualitative variable and I felt a bar chart best represented the months(note in this case I chose not to include a legend as I felt it would have negatively impacted the visualization of my data). When looking into the data it painted a really interesting picture as January, March, July and August were most popular. When doing some reasoning January made sense as it was typically when people make new years resolutions and thus more people would checkout books. For March I was a bit confused, but after some research I was able to determine that March was national reading month and thus there would naturally be more readers. As for July and August I believe we saw a trend that more people were checking out books due to school being closed during the summer and thus people had more free time to read. From this I was able to determine a trend in how people utilized the Seattle Public Library. 
 
 
-```{r, echo = FALSE, code = readLines("Chart3TylerRamos.R"), warning = FALSE}
+```{r, code = readLines("Chart3TylerRamos.R"), warning = FALSE, echo = FALSE, message = FALSE}
 
 ```
